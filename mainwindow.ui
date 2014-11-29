@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>864</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelframe">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 170, 127);
+font: 12pt &quot;Droid Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Frame</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelrgb">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 170, 127);
+font: 12pt &quot;Droid Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>RGB_Skin</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="labelrg">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 170, 127);
+font: 12pt &quot;Droid Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>RG_Skin</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelotsu">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 170, 127);
+font: 12pt &quot;Droid Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>OTSU_Skin</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="labelhsv">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 170, 127);
+font: 12pt &quot;Droid Sans&quot;;</string>
+        </property>
+        <property name="text">
+         <string>HSV_Skin</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>864</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuWebca_m">
+    <property name="title">
+     <string>Webcam</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuWebca_m"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/new/prefix1/open_webcam.png</normaloff>:/new/prefix1/open_webcam.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/new/prefix1/close_webcam.png</normaloff>:/new/prefix1/close_webcam.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/new/prefix1/exit.png</normaloff>:/new/prefix1/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

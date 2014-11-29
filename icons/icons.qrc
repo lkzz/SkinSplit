@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>close_webcam.png</file>
+        <file>exit.png</file>
+        <file>open_webcam.png</file>
+    </qresource>
+</RCC>
